@@ -11,7 +11,7 @@ cc-tool provides support for Texas Instruments CC Debugger
 2. Configure with `./cfg` 
    1. If you get errors, they relate to libraries, linking or headers, all exported in this file. Check boost version and include path, this one in particular: `LDFLAGS="-L/opt/homebrew/Cellar/boost/1.84.0_1/lib/"`
 3. Build with `make`
-4. Test 
+4. Test with cc-tool -v -e -w filename.hex
 
 ### User guide:
 `man cc-tool`
