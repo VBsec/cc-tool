@@ -1,0 +1,8 @@
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+export CPPFLAGS=-I/opt/homebrew/include
+export CXXFLAGS="-std=c++0x"
+export LDFLAGS="-L/opt/homebrew/Cellar/boost/1.84.0_1/lib/" 
+export LIBUSB_CFLAGS=-I/opt/homebrew/include/libusb-1.0 
+export LIBUSB_LIBS="-L/opt/homebrew/lib -lusb-1.0"
+./configure

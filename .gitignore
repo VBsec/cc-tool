@@ -1,7 +1,7 @@
 *.o
 .dirstamp
 /cc-tool
-
+.vscode
 /Makefile
 /Makefile.in
 /aclocal.m4

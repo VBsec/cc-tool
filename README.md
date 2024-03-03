@@ -4,9 +4,14 @@ cc-tool provides support for Texas Instruments CC Debugger
 ### Building from source, dependencies:
 - Ubuntu: `libusb-1.0-0-dev libboost-all-dev autoconf libtool`
 - Fedora: `boost-devel libusb1-devel`
-- Mac OS 12.5, from ports: `autoconf automake libusb boost pkgconfig libtool`
+- Mac OS 14.3: `brew install autoconf automake libusb boost pkgconfig libtool`
+  - built successfully on M3 pro max 2023
 
-Regenerate Autotools files first by running `./bootstrap` script.
+1. Regenerate Autotools files first by running `./bootstrap` script.
+2. Configure with `./cfg` 
+   1. If you get errors, they relate to libraries, linking or headers, all exported in this file. Check boost version and include path, this one in particular: `LDFLAGS="-L/opt/homebrew/Cellar/boost/1.84.0_1/lib/"`
+3. Build with `make`
+4. Test 
 
 ### User guide:
 `man cc-tool`
